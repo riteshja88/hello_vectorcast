@@ -1,5 +1,5 @@
 all:
-	gcc -c hello_vector_cast.c
+	gcc -c hello_vector_cast.c -Wall -Werror
 
 
 clean:
