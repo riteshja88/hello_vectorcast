@@ -105,3 +105,18 @@ void function_vector_cast_hello_004_003(const int * const a,
 	}
 	free(result);
 }
+
+void function_vector_cast_hello_004_004(const int * const a,
+										const int * const b,
+										int *result)
+{
+	if(NULL == a ||
+	   NULL == b) {
+		return;
+	}
+	result = (int*)malloc(sizeof(int));
+	if(NULL != result) {
+		*result = *a + *b;
+		free(result);
+	}
+}
